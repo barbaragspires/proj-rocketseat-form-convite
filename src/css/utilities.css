@@ -1,3 +1,35 @@
-#app-grid{
+.d-grid{
 	display: grid;
+}
+.d-flex{
+	display: flex;
+}
+
+.header-text-md{
+	font: var(--heading-md);
+	color: var(--text-heading);
+}
+
+.header-text-sm{
+	font:var(--heading-sm);
+	color: var(--text-heading);
+
+}
+
+.body-text-sm{
+	font: var(--body-sm);
+	color: var(--text-body);
+
+}
+
+::placeholder{
+font: var(--body-md);
+color: var(--input-placeholder);
+}
+
+.fieldset-container{
+	margin-block: 2.625rem;
+	text-decoration: none;
+	border: none;
+
 }

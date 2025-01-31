@@ -2,13 +2,14 @@
 	background-color: var(--shape-background);
 	width: 100vw;
 	height: 100vh;
+	grid-template-columns: 30% 70%;
 
 }
 
 .div-fix{
 	display: flex;
-	flex-direction: column;
 	position: fixed;
+	flex-direction: column;
 	background-image: url(/assets/images/Background.png);
 	background-repeat: no-repeat;
 	grid-column: 1/2;
@@ -16,7 +17,7 @@
 	height: 45.5rem;
 	background-size: contain;
 	border-radius: 0.75rem ;
-	margin: 1.25rem;
+	margin: 2rem;
 
 	& img{
 		width: 2.86rem;
@@ -37,3 +38,12 @@
 	}
 
 }
+.form{
+	grid-column: 2 / 3;
+	margin: 2rem;
+	background-color: var(--shape-body);
+	padding: 2rem;
+	border-radius: 0.75rem;
+}
+
+

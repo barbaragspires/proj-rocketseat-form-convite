@@ -14,6 +14,38 @@
 		<p>Crie um convite digital para o seu evento</p>
 	</div>
 	<main class="form">
+		<section>
+			<h2 class="header-text-md">Crie seu convite</h2>
+			<form action="" method="post">
+				<fieldset class="fieldset-container">
+					<img src="assets/icons/calendar.svg" alt="ícone de calendário">
+					<legend class="header-text-sm">Sobre o evento</legend>
+
+					<label class="body-text-sm" for="event-name">Título</label>
+					<input type="text" name="" id="event-name" placeholder="Nome do evento" required>
+
+					<label class="body-text-sm"for="start-of-event">Início</label>
+					<input type="datetime-local" name="" id="start-of-event" placeholder="DD/MM/AAAA, --:--" required>
+
+					<label class="body-text-sm" for="end-of-event">Fim</label>
+					<input type="datetime-local" name="" id="end-of-event" placeholder="DD/MM/AAAA, --:--" required>
+
+					<div class="body-text-sm" >
+						<input type="radio" name="type-of-event" id="in-person">
+						<label for="in-person"> <img src="assets/icons/building-2.svg" alt="">Presencial</label>
+
+						<input type="radio" name="type-of-event" id="on-line">
+						<label for="on-line"> <img src="assets/icons/video.svg" alt="">Online</label>
+					</div>	
+					
+					<label class="body-text-sm" for="localization">Local</label>
+					<input placeholder="Link ou endereço"  type="text" id="localization" id="">
+
+					<label class="body-text-sm" for="description">Descrição</label>
+					<textarea placeholder="Escreva sobre os detalhes do evento" name="" id="description"></textarea>
+				</fieldset>
+			</form>
+		</section>
 
 	</main>
 </div>
