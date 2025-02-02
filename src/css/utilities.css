@@ -8,19 +8,36 @@
 .header-text-md{
 	font: var(--heading-md);
 	color: var(--text-heading);
+	display: block;
 }
 
 .header-text-sm{
+	display: flex;
 	font:var(--heading-sm);
 	color: var(--text-heading);
+	margin-block: 2.5rem 1.62rem;
+
+		& img{
+			margin-right: 0.75rem;
+			width: 1.5rem;
+			height: 1.5rem;
+	
+		}
 
 }
 
 .body-text-sm{
 	font: var(--body-sm);
 	color: var(--text-body);
+	display: block;
 
 }
+
+.text-label{
+	font:var(--label-sm);
+	color: var(--input-placeholder);
+}
+
 
 ::placeholder{
 font: var(--body-md);
@@ -31,5 +48,11 @@ color: var(--input-placeholder);
 	margin-block: 2.625rem;
 	text-decoration: none;
 	border: none;
+}
+
+.radio-wrapper{
+	display: flex;
+	position: relative;
 
 }
+

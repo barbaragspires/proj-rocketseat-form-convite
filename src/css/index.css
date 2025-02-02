@@ -1,22 +1,30 @@
+
+
 #app{
 	background-color: var(--shape-background);
-	width: 100vw;
-	height: 100vh;
-	grid-template-columns: 30% 70%;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
 
 }
+.div-anchor{
+	border-radius: 0.75rem;
+	margin-right: 2rem;
+	width: 25rem;
+	height: 45.5rem;
 
-.div-fix{
+
+  & .div-fix{
+	position:fixed;
 	display: flex;
-	position: fixed;
 	flex-direction: column;
 	background-image: url(/assets/images/Background.png);
 	background-repeat: no-repeat;
-	grid-column: 1/2;
 	width: 25rem;
 	height: 45.5rem;
 	background-size: contain;
-	border-radius: 0.75rem ;
+	border-radius: 0.75rem;
 	margin: 2rem;
 
 	& img{
@@ -38,12 +46,92 @@
 	}
 
 }
+}
+
 .form{
-	grid-column: 2 / 3;
 	margin: 2rem;
 	background-color: var(--shape-body);
 	padding: 2rem;
 	border-radius: 0.75rem;
+	width: 40rem;
+
 }
 
+.container-datetime{
+	grid-template-areas: 
+	"label label"
+	"input input";
+	grid-auto-flow:column;
+	column-gap: 1rem;
+}
 
+.optional-colors{
+	grid-auto-flow: column;
+	margin-block:1rem 1.75rem;
+
+	& input[type="radio"]{
+	width: 2.125rem;
+	height: 2.125rem;
+	z-index: 1;
+	opacity: 0;
+	cursor: pointer;
+
+
+}}
+	
+.colours{
+	position: absolute;
+	left: 0;
+	border: 0.3125rem solid var(--shape-button);
+	border-radius: 6.1875rem;
+
+}
+
+input[type="radio"]:hover + .colours {
+  border-color: var(--shape-hover); 
+  transform: scale(1.1); 
+
+}
+
+input[type="radio"]:checked + .colours {
+ outline: 2px solid var(--brand-light); 
+
+}
+.theme-option	{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem; 
+	margin-block: 1.25rem 1.75rem;
+}
+
+.theme-wrapper{
+	display: grid;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+  gap: 0.25rem;
+	width: 8.37rem;
+	height: 6.43rem;
+	border-radius: 0.5rem;
+	border: 0.1875rem solid var(--input-stroke);
+	background-color: var(--shape-button);
+	cursor: pointer;
+
+			
+		& input[type="radio"]{
+			position: absolute;
+			opacity: 0;
+			visibility: hidden;
+
+			}
+	
+}
+		
+.theme-wrapper:hover {
+	border-color: var(--shape-hover); 
+	transform: scale(1.1); 
+		
+}
+.theme-wrapper:has(input[type="radio"]:checked) {
+	outline: 0.1875rem solid var(--brand-light);
+}
