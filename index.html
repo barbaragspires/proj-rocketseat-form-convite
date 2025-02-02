@@ -158,23 +158,49 @@
 							<p class="body-text-sm">Outro</p>
 						</label>
 					</div>
-					<div>
-						<div>
+					<div class="d-flex">
+						<div class="toggle-wrapper">
 							<label class="body-text-sm">Estilo</label>
 							<input type="radio" name="style" id="clear-style">
 							<label class="text-label" for="clear-style">Claro</label>
 							<input type="radio" name="style" id="dark-style">
 							<label class="text-label" for="dark-style">Escuro</label>
 						</div>
-						<div>
-							<label class="body-text-sm">Foto de Capa</label>
-							<input type="file" name="" id="">
+						<span class="relative"> <p class="body-text-sm">Foto de Capa</p>
+							<label for="input-photo" class="cover-photo">
+								<img src="assets/icons/upload.svg" alt="">
+								<p class="body-text-sm">Selecionar</p>
+							</label>
+							<input type="file" name="" id="input-photo" accept=".jpg,.png,.pdf">
+						</span>
+					</div>
+					<fieldset class="fieldset-container">
+						<legend class="header-text-sm"><img src="assets/icons/contact.svg" alt="ícone de pincel">Dados para Contato</legend>
+						<label class="body-text-sm" for="name"> Nome</label>
+						<input type="text" name="" id="name" placeholder="Nome completo" required>
+
+						<div class="d-grid container-datetime">
+							<label class="body-text-sm" for="e-mail">E-mail</label>
+							<input type="text" name="" id="e-mail" placeholder="exemplo@email.com" required>
+							<label class="body-text-sm" for="phone">Telefone</label>
+							<input type="text" name="" id="phone" placeholder="(99) 99999-9999" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
 						</div>
+					</fieldset>
+				</fieldset>
+				<fieldset class="fieldset-container">
+					<div class="checkbox-options">
+						<input type="checkbox" name="" id="terms-and-conditions">
+						<label class="body-text-sm" for="terms-and-conditions">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+						<input type="checkbox" name="" id="accepting-messages-updates">
+						<label class="body-text-sm" for="terms-and-conditions-updates">Aceito receber atualizações e promoções por e-mail</label>
+						<input type="checkbox" name="" id="accepting-promotions-messages">
+						<label class="body-text-sm" for="accepting-promotions-messages">Aceito receber atualizações e promoções por SMS</label>
 					</div>
 				</fieldset>
-
+				<div class="button-generate-invitation d-flex">
+					<button class="button-submit" type="submit"> <img src="assets/icons/ticket.svg" alt=""> Gerar convite</button>
+				</div>
 			</form>
-
 	</main>
 </div>
 </body>
