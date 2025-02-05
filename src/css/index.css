@@ -157,7 +157,7 @@ textarea{
 	height: 15rem;
 	margin-block: 0.75rem 1rem;
 	font: var(--input-text);
-	padding: 0.40rem 1rem; /* Aumentando o padding-top */
+	padding: 0.40rem 1rem; 
 	line-height: 3;
 	background-color: var(--input-base);
 
