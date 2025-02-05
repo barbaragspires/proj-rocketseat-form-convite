@@ -40,8 +40,9 @@
 
 
 ::placeholder{
-font: var(--body-md);
-color: var(--input-placeholder);
+	color: var(--input-placeholder);
+	font: var(--input-text);
+	
 }
 
 .fieldset-container{

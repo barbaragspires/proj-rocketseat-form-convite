@@ -156,10 +156,11 @@ textarea{
 	width: 36rem;
 	height: 15rem;
 	margin-block: 0.75rem 1rem;
-	resize: none;
 	font: var(--input-text);
-	padding-top: 0.25rem;
+	padding: 0.40rem 1rem; /* Aumentando o padding-top */
+	line-height: 3;
 	background-color: var(--input-base);
+
 
 }
 
@@ -317,7 +318,6 @@ input[type="checkbox"]:checked::after{
 	background-color: var(--input-stroke);
 	bottom: 1px;
 	left: 1px;
-	cursor: pointer;
 	transition: left 0.5s ease-in-out;
 	
 }
