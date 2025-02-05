@@ -56,3 +56,58 @@ color: var(--input-placeholder);
 
 }
 
+.toggle-wrapper{
+	grid-auto-flow: column;
+	width: 17rem;
+	height: 3rem;
+	border: 2px solid var(--input-stroke);
+	background-color: var(--input-base);
+	border-radius:0.5rem;
+	margin-block: 0.75rem 1rem;
+	position: relative;
+	grid-template-columns: repeat(2, 50%);
+
+
+		& img{
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.260rem;
+		}
+
+		& input[type="radio"]{
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+		}
+		
+		& label{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 999;
+			cursor: pointer;
+
+		}
+}
+
+.toggle-slider{
+	width: 8.0625rem;
+	height: 2.5rem;
+	position: absolute;
+	border-radius: 0.5rem;
+	border: 2px solid var(--input-stroke);
+	background-color: var(--shape-button);
+	bottom: 0.125rem;
+	left: 0.125rem;
+	margin-inline:0.25rem;
+	transition: left 0.3s ease-in-out;
+}
+
+.toggle-wrapper:has(#on-line:checked) .toggle-slider {
+	left: 50%;
+
+}
+
+.toggle-wrapper:has(#in-person:checked) .toggle-slider {
+	left: 0;
+}

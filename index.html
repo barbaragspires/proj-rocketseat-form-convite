@@ -31,11 +31,15 @@
 						<input type="text" name="" id="end-of-event" placeholder="DD/MM/AAAA, --:--" required>
 					</div>
 
-						<div class="toggle-wrapper" >
-							<input type="radio" name="type-of-event" id="in-person">
-							<label class="text-label" for="in-person"><img src="assets/icons/building-2.svg" alt="">Presencial</label>
-							<input type="radio" name="type-of-event" id="on-line">
-							<label class="text-label" for="on-line"><img src="assets/icons/video.svg" alt="">Online</label>
+						<div class="toggle-wrapper d-grid text-label" >
+							<label class="button-in-person" for="in-person">
+								<input type="radio" name="type-of-event" id="in-person">
+								<img src="assets/icons/building-2.svg" alt="">Presencial
+							</label>
+							<label class="button-online text-label">
+								<input type="radio" name="type-of-event" id="on-line">
+								<img src="assets/icons/video.svg" alt="">Online</label>
+							</label>
 							<div class="toggle-slider"></div>
 						</div>
 					
@@ -158,13 +162,16 @@
 							<p class="body-text-sm">Outro</p>
 						</label>
 					</div>
-					<div class="d-flex">
-						<div class="toggle-wrapper">
+					<div class="d-grid style">
+						<div>
 							<label class="body-text-sm">Estilo</label>
-							<input type="radio" name="style" id="clear-style">
-							<label class="text-label" for="clear-style">Claro</label>
-							<input type="radio" name="style" id="dark-style">
-							<label class="text-label" for="dark-style">Escuro</label>
+							<label class="toggle-style">
+								<input type="radio" name="style" id="clear-style">
+								<input type="radio" name="style" id="dark-style">
+								<div class="toggle"></div>
+								<p class="body-text-sm d-appearance">Escuro</p>
+								<p class="body-text-sm d-none">Claro</p>
+							</label>
 						</div>
 						<span class="relative"> <p class="body-text-sm">Foto de Capa</p>
 							<label for="input-photo" class="cover-photo">
