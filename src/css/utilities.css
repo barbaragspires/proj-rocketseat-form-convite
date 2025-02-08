@@ -100,15 +100,28 @@
 	background-color: var(--shape-button);
 	bottom: 0.125rem;
 	left: 0.125rem;
-	margin-inline:0.25rem;
+	margin-inline:0.125rem;
 	transition: left 0.3s ease-in-out;
 }
 
 .toggle-wrapper:has(#on-line:checked) .toggle-slider {
-	left: 50%;
+	left: 50.5%;
+	background-color: var(--brand-mid);
+	color: white;
 
+}
+.toggle-wrapper:has(#in-person:checked) .button-in-person{
+	color: white;
+	
+}
+
+.toggle-wrapper:has(#on-line:checked) .button-online{
+	color: white;
+	
 }
 
 .toggle-wrapper:has(#in-person:checked) .toggle-slider {
 	left: 0;
+	background-color: var(--brand-mid);
+	color: white;
 }

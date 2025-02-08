@@ -3,7 +3,7 @@
 #app{
 	background-color: var(--shape-background);
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 
@@ -13,6 +13,8 @@
 	margin-right: 2rem;
 	width: 25rem;
 	height: 45.5rem;
+	
+
 
 
   & .div-fix{
@@ -26,6 +28,7 @@
 	background-size: contain;
 	border-radius: 0.75rem;
 	margin: 2rem;
+		border: 2px solid #FF598B;
 
 	& img{
 		width: 2.86rem;
@@ -54,6 +57,7 @@
 	padding: 2rem;
 	border-radius: 0.75rem;
 	width: 40rem;
+	border: 2px solid #FF598B;
 
 }
 
@@ -239,7 +243,6 @@ textarea:focus{
 		}
 
 		& a{
-				text-decoration: none;
 				color:var(--brand-light);
 		}
 	}
@@ -319,10 +322,9 @@ input[type="checkbox"]:checked::after{
 	bottom: 1px;
 	left: 1px;
 	transition: left 0.5s ease-in-out;
-	
+	z-index: 999;
 }
 
-/* Move o botão quando o #dark-style está marcado */
 input#dark-style:checked ~ .toggle {
 	left: calc(100% - 1.8rem);
 	background-color: white;
@@ -331,7 +333,7 @@ input#dark-style:checked ~ .toggle {
 }
 
 .style:has(#dark-style:checked) .toggle-style {
-	background-color: var(--brand-light);
+	background-color: var(--brand-mid);
 	& .d-appearance{
 		display: none;
 		
